@@ -1,0 +1,47 @@
+.banner--parallax {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner--img {
+    background-image: url('https://images.pexels.com/photos/1248582/pexels-photo-1248582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Decoracion hogar');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.banner--text {
+    padding-top: 200px;
+}
+
+.banner--text--title {
+    color: white;
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em rgb(31, 31, 31);
+}
+
+.banner--text--subtitle {
+    color: white;
+    font-size: 40px;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em rgb(8, 8, 8);
+}
+
+@media only screen and (max-width: 600px) {
+    .banner--text {
+        padding-top: 150px;
+    }
+    .banner--text--title {
+        font-size: 30px;
+    }
+    .banner--text--subtitle {
+        font-size: 25px;
+    }
+}
