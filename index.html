@@ -12,18 +12,21 @@
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/varieties.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/whatsapp.css">
     <title>DecoHome</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="">
-                <a class="brand" href="#"><i class="far fa-home"></i>
+            <div>
+                <a class="nav--brand" href="#"><i class="far fa-home"></i>
                   <span>DECO</span><span style="color: white;"><strong>HOME</strong></span>
                 </a>
             </div>
-            <div id="navegation">
+            <div id="navegation" class="nav--menu ">
                 <ul>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#parallax">Home</a></li>
@@ -33,7 +36,7 @@
     </header>
     <!-- star banner -->
     <section id="parallax" class="banner--parallax">
-        <div class="banner--img">
+        <div id="parallax-img" class="banner--img">
             <div class="banner--text">
                 <h1 class="banner--text--title">DECORAMOS TU HOGAR</h1>
                 <h2 class="banner--text--subtitle">¡Como siempre soñaste!</h2>
@@ -62,7 +65,58 @@
         </div>
     </section>
     <!-- end varieties -->
+    <!-- star contact -->
+    <section class="contact" id="contacto">
+        <div>
+            <h1 class="contact--title">Cotiza con nosotros</h1>
+        </div>
+        <form class="contact--contain" name="form-contact-us" onsubmit="return validateForm()">
+            <div class="contact--form">
+                <div class="contact--element">
+                    <i class="fas fa-user contact--icon"></i>
+                    <input type="text" class="contact--input" placeholder="Nombre" id="name">
+                </div>
+                <div class="contact--element">
+                    <i class="far fa-envelope contact--icon"></i>
+                    <input type="email" class="contact--input" placeholder="Email" id="email">
+                </div>
+                <div class="contact--element">
+                    <i class="fal fa-mobile-android contact--icon"></i>
+                    <input type="number" class="contact--input" placeholder="Teléfono" id="phone">
+                </div>
+            </div>
+            <div class="contact--form">
+                <div class="contact--element">
+                    <i class="fas fa-align-left contact--icon"></i>
+                    <input type="text" class="contact--text-area" placeholder="Detalla tu requerimiento" id="requirement">
+                </div>
+                <div class="contact--button">
+                    <input class="button" type="submit" value="¡COTIZAR YA!" />
+                </div>
+            </div>
+        </form>
+
+    </section>
+    <!-- end contact -->
+    <footer>
+        <div class="footer--text">
+            <p>by Gabriela Gonzalez</p>
+        </div>
+        <div style="display: flex;">
+            <a href="https://www.linkedin.com/in/gabriela-gonzalez-design/" target="_blank"><i class="fab fa-linkedin-in footer--icon"></i></a>
+            <a href="https://github.com/ggonzalez18?tab=repositories" target="_blank"><i class="fab fa-github footer--icon"></i></a>
+            <a href="https://twitter.com/gabytasmile" target="_blank"><i class="fab fa-twitter footer--icon"></i></a>
+        </div>
+    </footer>
+    <!-- star whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=991346183&text=Hola,%20necesito%20cotizar%20un%20espacio..." class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp whatsapp--icon"></i>
+    </a>
+    <!-- end whatsapp -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 </body>
 
 </html>

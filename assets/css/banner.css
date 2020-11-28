@@ -39,9 +39,13 @@
         padding-top: 150px;
     }
     .banner--text--title {
-        font-size: 30px;
+        font-size: 25px;
     }
     .banner--text--subtitle {
         font-size: 25px;
+    }
+    .banner--img {
+        height: 70vh;
+        background-position-y: -25px;
     }
 }
