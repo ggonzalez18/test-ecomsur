@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 600px) {
     .banner--text {
-        padding-top: 150px;
+        padding-top: 180px;
     }
     .banner--text--title {
         font-size: 25px;
@@ -46,6 +46,6 @@
     }
     .banner--img {
         height: 70vh;
-        background-position-y: -25px;
+        background-position-y: -20px;
     }
 }
